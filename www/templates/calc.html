@@ -1,0 +1,51 @@
+<ion-view view-title="Mi Calculadora">
+    <ion-content>
+
+        <div class="list list-inset">
+            <label class="item item-input">
+                <input type="text" placeholder="{{miplaceholder}}" value="{{display}}">
+            </label>
+        </div>
+
+        <div class="list list-inset">
+
+            <div class="button-bar">
+                <button ng-click="btnClick(1)" class="button button-stable button-block ">1</button>
+                <button ng-click="btnClick(2)" class="button button-stable button-block ">2</button>
+                <button ng-click="btnClick(3)" class="button button-stable button-block ">3</button>
+            </div>
+            
+            <div class="button-bar">
+                <button ng-click="btnClick(4)" class="button button-stable button-block ">4</button>
+                <button ng-click="btnClick(5)" class="button button-stable button-block ">5</button>
+                <button ng-click="btnClick(6)" class="button button-stable button-block ">6</button>
+            </div>
+            
+            <div class="button-bar">
+                <button ng-click="btnClick(7)" class="button button-stable button-block ">7</button>
+                <button ng-click="btnClick(8)" class="button button-stable button-block ">8</button>
+                <button ng-click="btnClick(9)" class="button button-stable button-block ">9</button>
+            </div>
+            
+            <div class="button-bar">
+                <button ng-click="btnOperation(' + ')" class="button button-stable button-block ">+</button>
+                <button ng-click="btnOperation(' - ')" class="button button-stable button-block ">-</button>
+                <button ng-click="btnClick(0)" class="button button-stable button-block ">0</button>
+                
+            </div>
+            
+            <div class="button-bar">
+                <button ng-click="btnOperation(' * ')" class="button button-stable button-block ">x</button>
+                <button ng-click="btnOperation(' / ')" class="button button-stable button-block ">/</button>
+                <button ng-click="btnSimbl()" class="button button-stable button-block ">+/-</button>
+            </div>
+            
+            <div class="button-bar">
+                <button ng-click="btnEqual()" class="button button-stable button-block ">=</button>
+                <button ng-click="btnClear()" class="button button-stable button-block ">c</button>
+            </div>
+
+        </div>
+
+    </ion-content>
+</ion-view>
